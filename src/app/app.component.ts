@@ -28,7 +28,8 @@ export class AppComponent {
   }
 
   deleteUser(currentUser: User){
-    this.userService.removeUser(currentUser);}
+    this.userService.removeUser(currentUser);
+  }
 
   onChangePhrase(event: Event) :void{
     this.phrase = (event.target as HTMLInputElement).value;

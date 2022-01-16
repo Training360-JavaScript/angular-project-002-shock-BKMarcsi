@@ -8,7 +8,7 @@ import { User } from 'src/app/model/user';
 })
 export class DataListComponent implements OnInit {
 
-  @Input() userList: User[] = [];
+  @Input() dataList: User[] = [];
 
   @Output() selectClick: EventEmitter<User> = new EventEmitter();
   @Output() updateClick: EventEmitter<User> = new EventEmitter();
