@@ -1,28 +1,35 @@
 <div class="row">
   <div class="col-12 mb-1 pt-1 pb-1 d-flex justify-content-between">
     <app-data-cell
-    [data]="data-row"
-    [key]="id"
+    [data]="dataRow"
+    [key]="'id'"
     ></app-data-cell>
 
     <app-data-cell
-    [data]="data-row"
-    [key]="name"
+    [data]="dataRow"
+    [key]="'name'"
     ></app-data-cell>
 
     <app-data-cell
-    [data]="data-row"
-    [key]="email"
+    [data]="dataRow"
+    [key]="'email'"
     ></app-data-cell>
 
     <app-data-cell
-    [data]="data-row"
-    [key]="address"
+    [data]="dataRow"
+    [key]="'address'"
     ></app-data-cell>
 
     <app-data-cell
-    [data]="data-row"
-    [key]="active"
+    [data]="dataRow"
+    [key]="'active'"
     ></app-data-cell>
+
+    <app-action-button-group
+      (selectClick)="onSelectClicked($event)"
+      (updateClick)="onUpdateClicked($event)"
+      (deleteClick)="onDeleteClicked($event)"
+    >
+    </app-action-button-group>
   </div>
 </div>

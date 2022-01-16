@@ -12,6 +12,7 @@ import { ActionButtonComponent } from './common/action-button/action-button.comp
 import { ActionButtonGroupComponent } from './common/action-button-group/action-button-group.component';
 import { DataCellComponent } from './common/data-cell/data-cell.component';
 import { DataRowComponent } from './common/data-row/data-row.component';
+import { DataListComponent } from './common/data-list/data-list.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { DataRowComponent } from './common/data-row/data-row.component';
     ActionButtonGroupComponent,
     DataCellComponent,
     DataRowComponent,
+    DataListComponent,
   ],
   imports: [
     BrowserModule,

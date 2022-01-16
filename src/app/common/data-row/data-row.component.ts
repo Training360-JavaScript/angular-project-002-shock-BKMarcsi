@@ -19,16 +19,16 @@ export class DataRowComponent implements OnInit {
   ngOnInit(): void {
   }
 
-onSelectClicked(): void {
-  this.selectClick.emit(this.dataRow);
-}
+  onSelectClicked(): void {
+    this.selectClick.emit(this.dataRow);
+  }
 
-onUpdateClicked(): void {
-  this.updateClick.emit(this.dataRow);
-}
+  onUpdateClicked(): void {
+    this.updateClick.emit(this.dataRow);
+  }
 
-onDeleteClicked(): void {
-  this.deleteClick.emit(this.dataRow);
-}
+  onDeleteClicked(): void {
+    this.deleteClick.emit(this.dataRow);
+  }
 
 }
