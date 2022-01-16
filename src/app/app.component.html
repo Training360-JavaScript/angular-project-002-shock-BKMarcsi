@@ -88,7 +88,7 @@
     <div class="col-4">
       <app-user-detail
       [user]="currentUser"
-      (onDelete)="deleteUser(currentUser)"
+      (delUser)="deleteUser($event)"
       ></app-user-detail>
     </div>
   </div>

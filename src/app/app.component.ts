@@ -29,6 +29,7 @@ export class AppComponent {
 
   deleteUser(currentUser: User){
     this.userService.removeUser(currentUser);
+    this.currentUser = new User;
   }
 
   onChangePhrase(event: Event) :void{
