@@ -9,6 +9,8 @@ import { UserService } from './service/user.service';
 })
 export class AppComponent {
   title = 'The good Angular programmer';
+  phrase: string = '';
+  key: string = 'name';
 
 
   constructor(private userService: UserService) {
@@ -28,8 +30,8 @@ export class AppComponent {
   deleteUser(currentUser: User){
     this.userService.removeUser(currentUser);}
 
-  onChangePhrase(key: string){
-
+  onChangePhrase(event: Event) :void{
+    this.phrase = (event.target as HTMLInputElement).value;
   }
 
 }

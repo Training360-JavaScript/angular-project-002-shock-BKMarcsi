@@ -2,16 +2,16 @@
   <app-action-button
     [btnClass]="'btn-info'"
     [icon]="'fa-eye'"
-    (onSelectButtonClick)="onUserClicked($event)"
+    (clicked)="onSelectButtonClick()"
 ></app-action-button>
 <app-action-button
     [btnClass]="'btn-secondary'"
     [icon]="'fa-refresh'"
-    (onUpdateButtonClick)="onUserClicked($event)"
+    (clicked)="onUpdateButtonClick()"
 ></app-action-button>
 <app-action-button
     [btnClass]="'btn-danger'"
     [icon]="'fa-trash'"
-    (onDeleteButtonClick)="onUserClicked($event)"
+    (clicked)="onDeleteButtonClick()"
 ></app-action-button>
 </div>
