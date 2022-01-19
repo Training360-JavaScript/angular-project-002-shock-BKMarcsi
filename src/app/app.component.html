@@ -78,7 +78,7 @@
   <div class="row">
     <div class="col-8">
       <app-data-list
-      [dataList]="userList | filter:phrase:key"
+      [dataList]="userList"
       (selectClick)="selectUser($event)"
       (updateClick)="updateUser($event)"
       (deleteClick)="deleteUser($event)"
